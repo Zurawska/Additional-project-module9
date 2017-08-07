@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round")
+
+body
+    margin: 0
+    font-family: 'Varela Round', sans-serif
+
+@media (min-width: 1200px)
+    .container
+        width: 1280px
+        padding: 0
+
+$primary-color: #ffffff
+
+// HEADER
+
+.container
+    .jumbotron
+        background-image: url("../images/jumbotron.png")
+        background-size: cover
+        padding-bottom: 25px
+        border-radius: 0
+        margin-bottom: 0
+
+        .navbar-brand
+            padding-top: 0
+
+        .icons
+            text-align: center
+            padding: 0
+
+            li
+                display: inline-block
+
+.navbar
+    background-color: inherit
+    border: 0
+
+.slogan
+    text-align: center
+    padding: 15% 0
+
+    h1
+        color: $primary-color
+        font-size: 36px
+        font-weight: 700
+        text-transform: uppercase
+
+    h2
+        color: $primary-color
+        font-size: 16px
+        font-weight: 500
+
+.navbar-collapse
+  text-align: center
+
+.navbar-nav
+    display: inline-block
+    float: none
+
+.navbar-default
+    .navbar-nav
+        li
+            padding: 15px 10px
+            a
+                color: $primary-color
+                font-size: 16px
+                text-transform: uppercase
+                font-weight: 700
+
+                &:hover
+                    color: #16a085
+
+.btn-menu
+    color: $primary-color
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+    width: 166px
+    height: 49px
+    border-radius: 3px
+    background-color: #16a085
+    margin-top: 20px
+
+    &:hover
+        background-color: #11846d
+        text-decoration: none
+        color: $primary-color
+
+    &:focus
+        color: $primary-color
+
+@media (max-width: 767px)
+    .jumbotron
+        .navbar-brand
+            img
+                display: none
+
+// SECTION PHOTO
+
+.photo
+    padding-bottom: 20%
+
+.photo-item
+    background-color: #F5F6F7
+    background-image: url("../images/6-layers.png")
+    background-repeat: no-repeat
+    background-position: 80% -20%
+
+    .content
+        padding: 10% 20%
+
+    p
+        line-height: 30px
+        font-weight: 300
+
+        span
+            font-weight: 700
+
+    h3
+        font-size: 18px
+        color: #16a085
+        font-weight: 700
+        text-transform: uppercase
+        line-height: 20px
+        padding-bottom: 20px
+
+@media (max-width: 991px)
+    .photo-item
+        background-image: none
