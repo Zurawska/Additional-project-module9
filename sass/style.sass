@@ -97,9 +97,6 @@ $primary-color: #ffffff
 
 // SECTION PHOTO
 
-.photo
-    padding-bottom: 20%
-
 .photo-item
     background-color: #F5F6F7
     background-image: url("../images/6-layers.png")
@@ -109,21 +106,40 @@ $primary-color: #ffffff
     .content
         padding: 10% 20%
 
-    p
-        line-height: 30px
-        font-weight: 300
+p
+    line-height: 30px
+    font-weight: 300
 
-        span
-            font-weight: 700
-
-    h3
-        font-size: 18px
-        color: #16a085
+    span
         font-weight: 700
-        text-transform: uppercase
-        line-height: 20px
-        padding-bottom: 20px
+
+h3
+    font-size: 18px
+    color: #16a085
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 20px
+    padding-bottom: 20px
 
 @media (max-width: 991px)
     .photo-item
         background-image: none
+
+// SECTION DESIGN
+.design
+    max-height: 480px
+    overflow: hidden
+
+    .btn-menu
+        display: block
+
+.design-item
+    padding: 18% 20%
+
+.arrow
+    border: 0
+    background-color: inherit
+    margin-top: 10%
+
+.fa-chevron-left, .fa-chevron-right
+    font-size: 25px
