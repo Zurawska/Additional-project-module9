@@ -132,13 +132,11 @@ h3
     .btn-menu
         display: block
 
-.design-item
+.phone
     background-image: url("../images/phone.png")
     background-repeat: no-repeat
-    background-position: 10% 110px
-
-.design-text
-    padding: 18% 20% 10% 20%
+    background-position: 10% 140px
+    padding: 10% 5% 5%
 
 .arrow
     border: 0
@@ -148,6 +146,54 @@ h3
 .fa-chevron-left, .fa-chevron-right
     font-size: 25px
 
+.controllers
+    padding-top: 25px
+
+.owl-prev, .owl-next
+    padding: 10px
+    display: inline-block
+
 @media (max-width: 991px)
-    .design-item
+    .phone
         background-image: none
+
+    .owl-carousel
+        text-align: center
+
+    .phone
+        text-align: center
+
+        .btn-menu
+            display: inline
+
+
+// SECTION COMMUNITY
+
+.community-content
+    background-color: #F5F6F7
+
+h4
+    font-size: 18px
+    color: #373737
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 20px
+    padding: 20px 0
+
+.community-item
+    padding: 30%
+    text-align: center
+
+    p
+        font-size: 12px
+        line-height: 20px
+
+.community-item-photo
+    padding: 30% 0
+
+@media (max-width: 1200px)
+    .community-item-photo
+        padding: 5% 0
+        text-align: center
+    .community-item
+        padding: 5%
