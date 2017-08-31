@@ -16,7 +16,7 @@
     <body>
         <header>
             <div class="container">
-                <div class="jumbotron">
+                <div class="jumbotron" id="home">
                     <div class="row">
                         <nav class="navbar navbar-default">
                             <div class="navbar-header">
@@ -28,11 +28,11 @@
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
                                 <ul class="nav navbar-nav navbar-center">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Photoapp</a></li>
-                                    <a class="navbar-brand" href="#"><img src="images/camera.png" class="img-responsive" alt="Logo"></img></a>
-                                    <li><a href="#">design</a></li>
-                                    <li><a href="#">download</a></li>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#photo">Photoapp</a></li>
+                                    <a class="navbar-brand" href="#home"><img src="images/camera.png" class="img-responsive" alt="Logo"></a>
+                                    <li><a href="#design">design</a></li>
+                                    <li><a href="#download">download</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -43,14 +43,29 @@
                         <button type="button" class="btn btn-menu center-block">Get started</button>
                     </div>
                     <ul class="icons">
-                        <li><a href="https://www.facebook.com/" target="blank"><img src="images/fa-twitter.png" alt="facebook"></a></li>
-                        <li><a href="https://www.twitter.com/" target="blank"><img src="images/fa-flickr.png" alt="twitter"></a></li>
-                        <li><a href="https://www.instagram.com/" target="blank"><img src="images/fa-dribbble.png" alt="instagram"></a></li>
+                        <li><a href="https://www.twitter.com/" target="blank">
+                            <div class="morph pic">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </div>
+                            </a>
+                        </li>
+                        <li><a href="https://www.flickr.com/" target="blank">
+                            <div class="morph pic">
+                                <i class="fa fa-flickr" aria-hidden="true"></i>
+                            </div>
+                            </a>
+                        </li>
+                        <li><a href="https://dribbble.com/" target="blank">
+                            <div class="morph pic">
+                                <i class="fa fa-dribbble" aria-hidden="true"></i>
+                            </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </header>
-        <section class="photo">
+        <section class="photo" id="photo">
             <div class="container">
                 <div class="photo-item">
                     <div class="row">
@@ -69,7 +84,7 @@
                 </div>
             </div>
         </section>
-        <section class="design">
+        <section class="design" id="design">
             <div class="container">
                 <div class="phone">
                     <div class="row">
@@ -130,19 +145,19 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="community-item">
-                                <img src="images/livello-4.png" alt="logo"></img>
+                                <img src="images/livello-4.png" alt="logo">
                                 <h4>Our Community</h4>
                                 <p>Lorem ipsum dolor sit <br> amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="community-item-photo">
-                                <img src="images/livello-5.png" class="img-responsive" alt="car"></img>
+                                <img src="images/livello-5.png" class="img-responsive" alt="car">
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="community-item-photo">
-                                <img src="images/livello-6.png" class="img-responsive" alt="tree"></img>
+                                <img src="images/livello-6.png" class="img-responsive" alt="tree">
                             </div>
                         </div>
                     </div>
@@ -166,7 +181,7 @@
                 </div>
             </div>
         </section>
-        <section class="download">
+        <section class="download" id="download">
             <div class="container">
                 <div class="download-content">
                     <div class="row">

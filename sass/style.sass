@@ -11,6 +11,11 @@ body
 
 $primary-color: #ffffff
 
+h2
+    color: $primary-color
+    font-size: 16px
+    font-weight: 500
+
 // HEADER
 
 .container
@@ -30,6 +35,17 @@ $primary-color: #ffffff
 
             li
                 display: inline-block
+                padding: 7px
+
+            i
+                color: $primary-color
+                font-size: 30px
+
+.morph
+    transition: all 0.5s ease
+
+.morph:hover
+    transform: rotate(360deg)
 
 .navbar
     background-color: inherit
@@ -44,11 +60,6 @@ $primary-color: #ffffff
         font-size: 36px
         font-weight: 700
         text-transform: uppercase
-
-h2
-    color: $primary-color
-    font-size: 16px
-    font-weight: 500
 
 .navbar-collapse
   text-align: center
@@ -71,7 +82,7 @@ h2
                     color: #16a085
 
                 &:focus
-                    color: $primary-color
+                    color: #ccc
 
 .btn-menu
     color: $primary-color
@@ -103,15 +114,15 @@ h2
     background-repeat: no-repeat
     background-position: 80% -20%
 
-    .content
-        padding: 10% 20%
-
-p
-    line-height: 30px
-    font-weight: 300
+    p
+        line-height: 30px
+        font-weight: 300
 
     span
         font-weight: 700
+
+.content
+    padding: 10% 20%
 
 h3
     font-size: 18px
@@ -210,7 +221,7 @@ h4
 
     h2
         margin-top: 0
-        color: #fff
+        color: $primary-color
         font-weight: bold
         text-transform: uppercase
         padding: 20% 0 2% 0
@@ -231,7 +242,7 @@ h4
 
 .btn-secondary
     &:hover
-        color: #fff
+        color: $primary-color
 
 .fa-check
     font-size: 20px
@@ -251,36 +262,36 @@ h4
         padding: 0 20%
 
     span
-        color: #fff
+        color: $primary-color
         text-transform: uppercase
         font-weight: bold
         font-size: 16px
 
     i
-        color: #fff
+        color: $primary-color
         font-size: 27px
         position: absolute
         right: 8%
 
-    .btn-success
-        background-image: -webkit-linear-gradient(180deg, #16A085 15%, #1ABC9C 15%)
-        width: 100%
-        padding: 12px
-        text-align: left
+.btn-success
+    background-image: -webkit-linear-gradient(180deg, #16A085 15%, #1ABC9C 15%)
+    width: 100%
+    padding: 12px
+    text-align: left
 
-    .btn-success
-        &:hover
-            background-image: -webkit-linear-gradient(180deg, #1ABC9C 15%, #16A085 15%)
-        &:focus
-            border-color: #1ABC9C
+.btn-success
+    &:hover
+        background-image: -webkit-linear-gradient(180deg, #1ABC9C 15%, #16A085 15%)
+    &:focus
+        border-color: #1ABC9C
 
-    .download-content
-        text-align: center
-        padding: 7%
-        background-color: #F5F6F7
+.download-content
+    text-align: center
+    padding: 7%
+    background-color: #F5F6F7
 
-    .download-item
-        padding-bottom: 15px
+.download-item
+    padding-bottom: 15px
 
 // SECTION COPYRIGHT
 
