@@ -8,7 +8,6 @@ body
 @media (min-width: 1200px)
     .container
         width: 1280px
-        padding: 0
 
 $primary-color: #ffffff
 
@@ -17,30 +16,68 @@ h2
     font-size: 16px
     font-weight: 500
 
+#home
+    background-image: url("../images/jumbotron.png")
+    background-size: cover
+    margin: 0
+    border-radius: 0
+
 // HEADER
 
-.container
-    .jumbotron
-        background-image: url("../images/jumbotron.png")
-        background-size: cover
-        padding-bottom: 25px
-        border-radius: 0
-        margin-bottom: 0
-
-        .navbar-brand
-            padding-top: 0
-
-        .icons
-            text-align: center
-            padding: 0
-
-            li
-                display: inline-block
-                padding: 7px
-
-            i
+#myNavbar
+    ul
+        li
+            width: 20%
+            a
+                left: 50%
+                transform: translate(-50%,0)
                 color: $primary-color
-                font-size: 30px
+                font-size: 16px
+                text-transform: uppercase
+                font-weight: 700
+                letter-spacing: normal
+
+                &:hover
+                    color: #16a085
+
+                &:focus
+                    color: #ccc
+
+.navbar-nav
+    width: 100%
+    padding: 0 15%
+
+.navbar
+    background-color: transparent
+    border: none
+
+@media (max-width: 992px)
+    #myNavbar
+        ul
+            li
+                width: 25%
+                &:nth-child(3)
+                    display: none
+    .navbar-nav
+        padding: 0
+
+@media (max-width: 767px)
+    .navbar-nav
+        text-align: left
+
+// SECTION HERO
+
+.icons
+    text-align: center
+    padding: 0
+
+    li
+        display: inline-block
+        padding: 4px
+
+    i
+        color: $primary-color
+        font-size: 25px
 
 .morph
     transition: all 0.5s ease
@@ -48,42 +85,15 @@ h2
 .morph:hover
     transform: rotate(360deg)
 
-.navbar
-    background-color: inherit
-    border: 0
-
 .slogan
     text-align: center
-    padding: 15% 0
+    padding: 16% 0
 
     h1
         color: $primary-color
         font-size: 36px
         font-weight: 700
         text-transform: uppercase
-
-.navbar-collapse
-  text-align: center
-
-.navbar-nav
-    display: inline-block
-    float: none
-
-.navbar-default
-    .navbar-nav
-        li
-            padding: 15px 10px
-            a
-                color: $primary-color
-                font-size: 16px
-                text-transform: uppercase
-                font-weight: 700
-
-                &:hover
-                    color: #16a085
-
-                &:focus
-                    color: #ccc
 
 .btn-start
     color: $primary-color
@@ -100,12 +110,6 @@ h2
         background-color: #11846d
         text-decoration: none
         color: $primary-color
-
-@media (max-width: 767px)
-    .jumbotron
-        .navbar-brand
-            img
-                display: none
 
 // SECTION PHOTO
 

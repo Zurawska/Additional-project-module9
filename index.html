@@ -11,10 +11,10 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        <header>
-            <div class="container">
-                <div class="jumbotron" id="home">
-                    <div class="row">
+        <div class="container">
+            <div class="jumbotron" id="home">
+                <header>
+                    <div class="container">
                         <nav class="navbar navbar-default">
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -24,44 +24,48 @@
                                 </button>
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
-                                <ul class="nav navbar-nav navbar-center">
+                                <ul class="nav navbar-nav navbar-center text-center">
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#photo">Photoapp</a></li>
-                                    <a class="navbar-brand" href="#home"><img src="images/camera.png" class="img-responsive" alt="Logo"></a>
+                                    <li><a class="navbar-brand" href="#home"><img src="images/camera.png" class="img-responsive" alt="Logo"></a></li>
                                     <li><a href="#design">design</a></li>
                                     <li><a href="#download">download</a></li>
                                 </ul>
                             </div>
                         </nav>
                     </div>
-                    <div class="slogan">
-                        <h1>your life , a photo</h1>
-                        <h2>print your life in a simple photo</h2>
-                        <button type="button" class="btn btn-start center-block">Get started</button>
+                </header>
+                <section class="hero">
+                    <div class="container">
+                        <div class="slogan">
+                            <h1>your life , a photo</h1>
+                            <h2>print your life in a simple photo</h2>
+                            <button type="button" class="btn btn-start center-block">Get started</button>
+                        </div>
+                        <ul class="icons">
+                            <li><a href="https://www.twitter.com/" target="blank">
+                                <div class="morph pic">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </div>
+                                </a>
+                            </li>
+                            <li><a href="https://www.flickr.com/" target="blank">
+                                <div class="morph pic">
+                                    <i class="fa fa-flickr" aria-hidden="true"></i>
+                                </div>
+                                </a>
+                            </li>
+                            <li><a href="https://dribbble.com/" target="blank">
+                                <div class="morph pic">
+                                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="icons">
-                        <li><a href="https://www.twitter.com/" target="blank">
-                            <div class="morph pic">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </div>
-                            </a>
-                        </li>
-                        <li><a href="https://www.flickr.com/" target="blank">
-                            <div class="morph pic">
-                                <i class="fa fa-flickr" aria-hidden="true"></i>
-                            </div>
-                            </a>
-                        </li>
-                        <li><a href="https://dribbble.com/" target="blank">
-                            <div class="morph pic">
-                                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                            </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                </section>
             </div>
-        </header>
+        </div>
         <section class="photo" id="photo">
             <div class="container">
                 <div class="photo-item">
@@ -138,7 +142,7 @@
         </section>
         <section class="community">
             <div class="container">
-                <div class = "community-content">
+                <div class="community-content">
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="community-item">
